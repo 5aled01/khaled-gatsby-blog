@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-
 import React from "react";
 import Container from "../components/container";
 
@@ -10,6 +9,10 @@ const blogPosts = ({ data, pageContext }) => {
   console.log(data.mdx.html);
   return (
     <Container>
+      <br/>
+       <a class="a" href="/" >
+        Home
+      </a>
       <h1 className="post-heading">{frontmatter.title}</h1>
       <p className="post-date">{frontmatter.date}</p>
 
@@ -21,7 +24,7 @@ const blogPosts = ({ data, pageContext }) => {
         <>
           {previous && (
             <Link to={previous.fields.slug}>
-              <button className="previous-next-button">
+              <button className="previous-button">
                 {previous.frontmatter.title}
               </button>
             </Link>
@@ -32,8 +35,8 @@ const blogPosts = ({ data, pageContext }) => {
         <>
           {next && (
             <Link to={next.fields.slug}>
-              <button className="previous-next-button">
-                {next.frontmatter.title}
+              <button className="next-button">
+                {next.frontmatter.title + ' >'} 
               </button>
             </Link>
           )}
