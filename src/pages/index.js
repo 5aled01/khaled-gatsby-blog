@@ -2,22 +2,25 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
 import Container from "../components/container"
-import KhaledImage from "../images/khaled-image.JPEG"
+// import KhaledImage from "../images/khaled-image.JPEG"
 
 export default function Home({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const siteDescription = data.site.siteMetadata.description
   const posts = data.allMdx.nodes
   // <h1 className="home-title"></h1>  <-- add titel
-  return (
-    <Container>
-      <SEO title={siteTitle} description={siteDescription} />
-      <h1 className="home-title"></h1>
-      <img
+  /**
+   * <img
         src={KhaledImage}
         className="khaledImage"
         alt="Photo of Khaled Ihitt"
       />
+   */
+  return (
+    <Container>
+      <SEO title={siteTitle} description={siteDescription} />
+      <h1 className="home-title"></h1>
+      
       <p>Hi I'm a Software Development and Data Science Student. I like bean cool and my favorite technologies right now are: 
         IA & deep learning.
       </p>
