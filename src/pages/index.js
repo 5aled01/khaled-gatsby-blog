@@ -5,7 +5,7 @@ import Container from "../components/container"
 import Image from '../components/Image';
 
 export default function Home({ data, location }) {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `Home`
   const siteDescription = data.site.siteMetadata.description
   const posts = data.allMdx.nodes
   // <h1 className="home-title"></h1>  <-- add titel

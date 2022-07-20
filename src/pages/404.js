@@ -6,6 +6,6 @@ const default404 = () => (
     <div>Oh no you got lost</div>
     <Link to="/">Go Home</Link>
   </div>
-);
+); 
 
 export default default404;

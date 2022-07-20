@@ -8,7 +8,7 @@ module.exports = {
       summary: `Khaled cool blog`,
     },
     description: `Cool Blog`,
-    siteUrl: `http://localhost:8000/`,
+    siteUrl: `https://khaledihitt.com/`,
     social: {
       twitter: `KhaledEsc_`,
     },
@@ -47,6 +47,18 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Khaled logo',
+        short_name: 'KhaledLogo',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'standalone',
+        icon: 'src/images/khaled-logo.png',
       },
     },
   ],
