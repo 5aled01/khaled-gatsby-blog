@@ -23,7 +23,6 @@ export default function Home({ data, location }) {
         alt="Photo of Khaled Ihitt"
         style={{
           width: '190px',
-          animation: 'fadeIn 1s'
         }}
       />
       </>

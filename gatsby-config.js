@@ -56,7 +56,7 @@ module.exports = {
         short_name: 'KhaledLogo',
         start_url: '/',
         background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        theme_color: '#f0f0f0',
         display: 'standalone',
         icon: 'src/images/khaled-logo.png',
       },
