@@ -26,8 +26,8 @@ export default function Home({ data, location }) {
         }}
       />
       </>
-      <p>Hi I'm a Software Development and Data Science Student. I like bean cool and my favorite technologies right now are: 
-        IA & deep learning.
+      <p>I'm a Software Developer and data science student who enjoys programming and data manipulation/visualization.
+        My favorite technologies right now are: React.js, Machine Learning, Deep Learning, NoSQL databases.
       </p>
 
       <br></br>
